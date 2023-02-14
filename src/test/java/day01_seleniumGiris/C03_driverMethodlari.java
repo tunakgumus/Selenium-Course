@@ -21,11 +21,11 @@ public class C03_driverMethodlari {
 
 
         if (actualUrl.contains(expectedIcerik)){
-            System.out.println("Test PASSED");
+            System.out.println("Test : PASSED");
         }else {
-            System.out.println("Test FAILED");
+            System.out.println("Test : FAILED");
         }
-        driver.quit();
+        driver.close();
 
     }
 }

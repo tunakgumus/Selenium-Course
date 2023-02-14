@@ -13,8 +13,11 @@ public class C04_DriverMethodlari {
 
         System.out.println(driver.getPageSource());
 
+        String expectedIcerik = "elementor-widget-wrap";
+        String actualSayfaKodlari = driver.getPageSource();
 
-
+        if(actualSayfaKodlari.contains(expectedIcerik)) System.out.println("Test : PASSED");
+        else System.out.println("Test : FAILED");
 
         driver.quit();
     }
